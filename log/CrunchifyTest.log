@@ -1,0 +1,328 @@
+2019-03-08 09:48:26 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 09:48:26 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 09:48:26 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 09:48:26 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 09:48:26 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 09:48:26 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 09:48:26 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 09:48:26 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 09:48:26 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 09:48:26 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:00:49 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:00:49 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:00:49 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:00:49 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:00:49 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:00:50 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:00:50 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:00:50 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:00:50 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:00:50 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:00:50 [Thread-1 (activemq-netty-threads)] WARN  server:178 - AMQ222216: Security problem while creating session: AMQ229031: Unable to validate user from /127.0.0.1:63043. Username: null; SSL certificate subject DN: unavailable
+2019-03-08 10:00:50 [Thread-2 (activemq-netty-threads)] WARN  server:178 - AMQ222216: Security problem while creating session: AMQ229031: Unable to validate user from /127.0.0.1:63044. Username: null; SSL certificate subject DN: unavailable
+2019-03-08 10:01:14 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:01:14 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:01:14 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:01:14 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:01:14 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:01:14 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:01:14 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:01:14 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:01:14 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:01:14 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:01:14 [Thread-1 (activemq-netty-threads)] WARN  server:178 - AMQ222216: Security problem while creating session: AMQ229031: Unable to validate user from /127.0.0.1:63136. Username: null; SSL certificate subject DN: unavailable
+2019-03-08 10:03:17 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:03:17 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:03:17 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:03:17 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:03:17 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:03:17 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:03:17 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:03:17 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:03:17 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:03:17 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:07:05 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:07:05 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:07:05 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:07:05 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:07:05 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:07:05 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:07:05 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:07:06 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:07:06 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:07:06 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:08:53 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:08:53 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:08:53 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:08:53 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:08:53 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:08:53 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:08:53 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:08:53 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:08:53 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:08:53 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:14:55 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:14:55 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:14:55 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:14:55 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:14:55 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:14:55 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:14:55 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:14:55 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:14:55 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:14:55 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:23:10 [Finalizer] WARN  client:963 - AMQ212008: I am closing a core ClientSessionFactory you left open. Please make sure you close all ClientSessionFactories explicitly before letting them go out of scope! 1,160,684,969
+java.lang.Exception: null
+	at org.apache.activemq.artemis.core.client.impl.ClientSessionFactoryImpl.<init>(ClientSessionFactoryImpl.java:171) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.client.impl.ServerLocatorImpl.createSessionFactory(ServerLocatorImpl.java:779) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory.createConnectionInternal(ActiveMQConnectionFactory.java:844) ~[artemis-jms-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:282) ~[artemis-jms-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:277) ~[artemis-jms-client-2.6.4.jar:2.6.4]
+	at Consumer.initConsumer(Consumer.java:34) ~[classes/:?]
+	at Launcher.main(Launcher.java:16) ~[classes/:?]
+2019-03-08 10:46:11 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:46:11 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:46:11 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:46:11 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:46:11 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:46:11 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:46:11 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:46:11 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:46:11 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:46:11 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:46:11 [Thread-0 (ActiveMQ-remoting-threads-ActiveMQServerImpl::serverUUID=3afff34d-41b1-11e9-b256-787b8ab17645-2139788441)] WARN  server:178 - AMQ222216: Security problem while creating session: AMQ229031: Unable to validate user from invm:0. Username: null; SSL certificate subject DN: unavailable
+2019-03-08 10:51:38 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:51:38 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:51:38 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:51:38 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:51:38 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:51:38 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:51:38 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:51:39 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:51:39 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:51:39 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:51:39 [Thread-5 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$5@7e7be63f)] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:51:39 [Thread-5 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$5@7e7be63f)] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:53:03 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:53:03 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:53:03 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:53:03 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:53:03 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:53:03 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:53:03 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:53:03 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:53:03 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:53:03 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:53:03 [Thread-6 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$5@614ca7df)] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:53:03 [Thread-6 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$5@614ca7df)] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:54:16 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:54:16 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:54:16 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:54:16 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:54:16 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:54:16 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:54:16 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:54:16 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:54:16 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:54:16 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:54:17 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:54:17 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 10:54:17 [Thread-23 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$5@7e7be63f)] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:54:17 [Thread-23 (ActiveMQ-server-org.apache.activemq.artemis.core.server.impl.ActiveMQServerImpl$5@7e7be63f)] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:55:23 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 10:55:23 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 10:55:23 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 10:55:23 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 10:55:23 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 10:55:23 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 10:55:23 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 10:55:23 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:55:23 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 10:55:23 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 10:55:23 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 10:55:23 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 11:21:38 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 11:21:38 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 11:21:38 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 11:21:38 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 11:21:38 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 11:21:38 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 11:21:38 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 11:21:38 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:21:38 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:21:38 [main] INFO  server:242 - AMQ221019: Deleting unreferenced message id=15,032,385,544 from the journal
+2019-03-08 11:21:38 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 11:21:38 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 11:21:38 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 11:21:57 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 11:21:57 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 11:21:57 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 11:21:57 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 11:21:57 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 11:21:57 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 11:21:57 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 11:21:57 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:21:57 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:21:57 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 11:21:57 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 11:21:57 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 11:23:55 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 11:23:55 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 11:23:55 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 11:23:55 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 11:23:55 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 11:23:55 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 11:23:55 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 11:23:55 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:23:55 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:23:55 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 11:23:55 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 11:23:55 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 11:24:48 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 11:24:48 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 11:24:48 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 11:24:48 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 11:24:48 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 11:24:48 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 11:24:48 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 11:24:48 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:24:48 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:24:49 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 11:24:49 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 11:24:49 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 11:25:29 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 11:25:29 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 11:25:29 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 11:25:29 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 128,712,704
+2019-03-08 11:25:29 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 11:25:29 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 11:25:29 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 11:25:29 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:25:29 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:25:29 [main] INFO  server:2682 - AMQ221005: Deleting pending large message as it was not completed: Pair[a=23622320297, b=23622320296]
+2019-03-08 11:25:29 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 11:25:29 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 11:25:29 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 11:25:45 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 11:25:45 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 11:25:46 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 11:25:46 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 32,243,712
+2019-03-08 11:25:46 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 11:25:46 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 11:25:46 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 11:25:46 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:25:46 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 11:25:46 [main] INFO  server:2682 - AMQ221005: Deleting pending large message as it was not completed: Pair[a=25769803801, b=25769803800]
+2019-03-08 11:25:46 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 11:25:46 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 11:25:46 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 12:24:30 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 12:24:30 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 12:24:30 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 12:24:30 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 32,243,712
+2019-03-08 12:24:30 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 12:24:30 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 12:24:30 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 12:24:30 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 12:24:30 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 12:24:30 [main] INFO  server:2682 - AMQ221005: Deleting pending large message as it was not completed: Pair[a=27917288709, b=27917288708]
+2019-03-08 12:24:30 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 12:24:30 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 12:24:30 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 12:25:13 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 12:25:13 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 12:25:13 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 12:25:13 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 12:25:13 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 12:25:13 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 12:25:13 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 12:25:13 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 12:25:13 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 12:25:13 [main] INFO  server:2682 - AMQ221005: Deleting pending large message as it was not completed: Pair[a=30064771178, b=30064771177]
+2019-03-08 12:25:13 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 12:25:13 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 12:25:13 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 15:13:52 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 15:13:52 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 15:13:52 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 15:13:52 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 15:13:52 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 15:13:52 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 15:13:52 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 15:13:52 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:13:52 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:13:52 [main] INFO  server:2682 - AMQ221005: Deleting pending large message as it was not completed: Pair[a=32212255180, b=32212255179]
+2019-03-08 15:13:52 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 15:13:52 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 15:13:52 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 15:13:52 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x9a8a775e, L:/127.0.0.1:61616 - R:/127.0.0.1:53807]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.lang.IllegalArgumentException: If "sslEnabled" is true then "keyStorePath" must be non-null unless an alternative "keyStoreProvider" has been specified.
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:557) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-08 15:14:17 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 15:14:17 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 15:14:17 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 15:14:17 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 15:14:17 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 15:14:17 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 15:14:17 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 15:14:17 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:14:17 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:14:18 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 15:14:18 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 15:14:18 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 15:16:59 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 15:16:59 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 15:16:59 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 15:16:59 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 15:16:59 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 15:16:59 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 15:16:59 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 15:16:59 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:16:59 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:16:59 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 15:16:59 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 15:16:59 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 15:20:57 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 15:20:57 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 15:20:57 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 15:20:57 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 15:20:57 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 15:20:57 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 15:20:57 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 15:20:57 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:20:57 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:20:57 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 15:20:57 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 15:20:57 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-08 15:23:56 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-08 15:23:56 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-08 15:23:56 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-08 15:23:56 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 3,817,865,216
+2019-03-08 15:23:56 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-08 15:23:56 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-08 15:23:56 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-08 15:23:56 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:23:56 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-08 15:23:57 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-08 15:23:57 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-08 15:23:57 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 

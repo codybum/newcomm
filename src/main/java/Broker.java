@@ -53,7 +53,7 @@ public class Broker {
 
             config.setAcceptorConfigurations(transports);
 
-            //config.setSecurityEnabled(false);
+            config.setSecurityEnabled(false);
 
 
             //NetworkBridge

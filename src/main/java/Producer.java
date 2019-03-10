@@ -16,9 +16,14 @@ public class Producer {
     Connection connection = null;
 
 
-    public Producer() {
+    private String agentpath;
+    private String password;
 
 
+    public Producer(String agentpath, String password) {
+
+        this.agentpath = agentpath;
+        this.password = password;
 
     }
 
@@ -29,10 +34,14 @@ public class Producer {
             TransportConfiguration transportConfiguration = new TransportConfiguration(NettyConnectorFactory.class.getName());
 
             transportConfiguration.getParams().put(TransportConstants.SSL_ENABLED_PROP_NAME, true);
-            //transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PROVIDER_PROP_NAME, storeType);
-            //transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PATH_PROP_NAME, CLIENT_SIDE_TRUSTSTORE);
-            //transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PASSWORD_PROP_NAME, PASSWORD);
-
+            transportConfiguration.getParams().put(TransportConstants.TRUST_ALL_PROP_NAME, true);
+            transportConfiguration.getParams().put(TransportConstants.VERIFY_HOST_PROP_NAME, false);
+            transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PROVIDER_PROP_NAME, "PKCS12");
+            transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PATH_PROP_NAME, agentpath + "-trust.pkcs12");
+            transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PASSWORD_PROP_NAME, password);
+            transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PROVIDER_PROP_NAME, "PKCS12");
+            transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PATH_PROP_NAME, agentpath + "-key.pkcs12");
+            transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PASSWORD_PROP_NAME, password);
 
 
             //TransportConfiguration transportConfiguration = new TransportConfiguration(InVMConnectorFactory.class.getName());

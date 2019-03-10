@@ -1228,3 +1228,29 @@ java.nio.channels.ClosedChannelException: null
 2019-03-10 09:50:59 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
 2019-03-10 09:50:59 [Thread-1 (activemq-netty-threads)] INFO  server:527 - AMQ221053: Disallowing use of vulnerable protocol 'SSLv2Hello' on acceptor '8840cc20-433b-11e9-84cd-0ec45854408c'. See http://www.oracle.com/technetwork/topics/security/poodlecve-2014-3566-2339408.html for more details.
 2019-03-10 09:50:59 [Thread-1 (activemq-netty-threads)] WARN  server:178 - AMQ222216: Security problem while creating session: AMQ229031: Unable to validate user from /127.0.0.1:58429. Username: null; SSL certificate subject DN: unavailable
+2019-03-10 13:13:12 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 13:13:12 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 13:13:12 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 13:13:12 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 13:13:12 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 13:13:12 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 13:13:12 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 13:13:13 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 13:13:13 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 13:13:13 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 13:13:13 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 13:13:13 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 13:13:14 [Thread-1 (activemq-netty-threads)] INFO  server:527 - AMQ221053: Disallowing use of vulnerable protocol 'SSLv2Hello' on acceptor 'c8f33ada-4357-11e9-9479-0ec45854408c'. See http://www.oracle.com/technetwork/topics/security/poodlecve-2014-3566-2339408.html for more details.
+2019-03-10 13:15:06 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 13:15:06 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 13:15:06 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 13:15:06 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 13:15:06 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 13:15:06 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 13:15:06 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 13:15:06 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 13:15:06 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 13:15:07 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 13:15:07 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 13:15:07 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 13:15:08 [Thread-1 (activemq-netty-threads)] INFO  server:527 - AMQ221053: Disallowing use of vulnerable protocol 'SSLv2Hello' on acceptor '0cdffeec-4358-11e9-b5e4-0ec45854408c'. See http://www.oracle.com/technetwork/topics/security/poodlecve-2014-3566-2339408.html for more details.

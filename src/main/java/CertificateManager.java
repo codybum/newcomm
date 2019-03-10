@@ -25,6 +25,7 @@ public class CertificateManager {
     
     private int keySize = 2048;
 
+
     private String agentpath;
 
     public CertificateManager(String agentPath, String password) {

@@ -35,8 +35,8 @@ public class Launcher {
 
 
 
-            //Producer producer = new Producer();
-            //producer.initProducer();
+            Producer producer = new Producer(agentpath, password);
+            producer.initProducer();
 
 
         } catch(Exception ex) {

@@ -8,13 +8,18 @@ import org.apache.activemq.artemis.core.remoting.impl.netty.TransportConstants;
 import org.apache.activemq.artemis.core.server.embedded.EmbeddedActiveMQ;
 
 import java.util.HashSet;
+import java.util.Map;
 
 
 public class Broker {
 
-    public Broker() {
+    public String agentpath;
+    public String password;
 
+    public Broker(String agentpath, String password) {
 
+    this.agentpath = agentpath;
+    this.password = password;
 
     }
 
@@ -27,25 +32,33 @@ public class Broker {
 
             TransportConfiguration transportConfiguration = new TransportConfiguration(NettyAcceptorFactory.class.getName());
 
-            /*
-            @Parameterized.Parameters(name = "storeType={0}")
-   public static Collection getParameters() {
-      return Arrays.asList(new Object[][]{{"JCEKS"}, {"JKS"}, {"PKCS12"}});
-   }
-             */
-
             transportConfiguration.getParams().put(TransportConstants.SSL_ENABLED_PROP_NAME, true);
-            transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PROVIDER_PROP_NAME, "jks");
-            transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PATH_PROP_NAME, "client");
-            //transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PASSWORD_PROP_NAME, PASSWORD);
+            transportConfiguration.getParams().put(TransportConstants.TRUST_ALL_PROP_NAME, true);
+            transportConfiguration.getParams().put(TransportConstants.VERIFY_HOST_PROP_NAME, false);
+            transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PROVIDER_PROP_NAME, "PKCS12");
+            transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PATH_PROP_NAME, agentpath + "-trust.pkcs12");
+            transportConfiguration.getParams().put(TransportConstants.TRUSTSTORE_PASSWORD_PROP_NAME, password);
+            transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PROVIDER_PROP_NAME, "PKCS12");
+            transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PATH_PROP_NAME, agentpath + "-key.pkcs12");
+            transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PASSWORD_PROP_NAME, password);
 
+            for (Map.Entry<String, Object> entry : transportConfiguration.getParams().entrySet()) {
+                String key = entry.getKey();
+                Object value = entry.getValue();
+                System.out.println(key + ":" + value);
+            }
 
             transports.add(transportConfiguration);
             //transports.add(new TransportConfiguration(InVMAcceptorFactory.class.getName()));
 
             config.setAcceptorConfigurations(transports);
 
-            config.setSecurityEnabled(false);
+            //config.setSecurityEnabled(false);
+
+
+            //NetworkBridge
+            //NetworkConnector
+
 
 
             EmbeddedActiveMQ server = new EmbeddedActiveMQ();

@@ -326,3 +326,905 @@ Caused by: java.lang.IllegalArgumentException: If "sslEnabled" is true then "key
 2019-03-08 15:23:57 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
 2019-03-08 15:23:57 [main] INFO  server:79 - AMQ221007: Server is now live
 2019-03-08 15:23:57 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:43:16 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:43:16 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:43:16 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:43:16 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:43:16 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:43:16 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:43:16 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:43:17 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:43:17 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:43:18 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:43:18 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:43:18 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:46:52 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:46:52 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:46:52 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:46:52 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:46:52 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:46:52 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:46:52 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:46:52 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:46:52 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:46:53 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:46:53 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:46:53 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:47:09 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:47:09 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:47:09 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:47:10 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:47:10 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:47:10 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:47:10 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:47:10 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:47:10 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:47:10 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:47:10 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:47:10 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:48:46 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:48:46 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:48:46 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:48:47 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:48:47 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:48:47 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:48:47 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:48:47 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:48:47 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:48:47 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:48:47 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:48:47 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:48:47 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0xde4f734a, L:/127.0.0.1:61616 - R:/127.0.0.1:57646]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.lang.IllegalArgumentException: If "sslEnabled" is true then "keyStorePath" must be non-null unless an alternative "keyStoreProvider" has been specified.
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:557) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 08:48:47 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 08:49:55 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:49:55 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:49:55 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:49:55 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:49:55 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:49:55 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:49:55 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:49:55 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:49:55 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:49:56 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:49:56 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:49:56 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:50:14 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:50:14 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:50:14 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:50:14 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:50:14 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:50:14 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:50:14 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:50:14 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:50:14 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:50:15 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:50:15 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:50:15 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:50:15 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x3a6d1039, L:/127.0.0.1:61616 - R:/127.0.0.1:57665]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.lang.IllegalArgumentException: If "sslEnabled" is true then "keyStorePath" must be non-null unless an alternative "keyStoreProvider" has been specified.
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:557) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 08:50:15 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 08:50:53 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:50:53 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:50:53 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:50:53 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:50:53 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:50:53 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:50:53 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:50:54 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:50:54 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:50:54 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:50:54 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:50:54 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:50:54 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x8146ea69, L:/127.0.0.1:61616 - R:/127.0.0.1:57675]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.lang.IllegalArgumentException: If "sslEnabled" is true then "keyStorePath" must be non-null unless an alternative "keyStoreProvider" has been specified.
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:557) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 08:50:54 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 08:51:29 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:51:29 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:51:29 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:51:29 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:51:29 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:51:29 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:51:29 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:51:29 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:51:29 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:51:30 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:51:30 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:51:30 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:51:30 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x58973b6c, L:/127.0.0.1:61616 - R:/127.0.0.1:57682]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.lang.IllegalArgumentException: If "sslEnabled" is true then "keyStorePath" must be non-null unless an alternative "keyStoreProvider" has been specified.
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:557) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 08:52:13 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:52:13 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:52:13 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:52:13 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:52:13 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:52:13 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:52:13 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:52:13 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:52:13 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:52:13 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:52:13 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:52:13 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:52:14 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0xa19cdcef, L:/127.0.0.1:61616 - R:/127.0.0.1:57689]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.lang.IllegalArgumentException: If "sslEnabled" is true then "keyStorePath" must be non-null unless an alternative "keyStoreProvider" has been specified.
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:557) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 08:52:14 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 08:55:32 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:55:32 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:55:32 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:55:32 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:55:32 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:55:32 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:55:32 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:55:32 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:55:32 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:55:33 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:55:33 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:55:33 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:55:33 [Thread-0 (ActiveMQ-client-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0xdb0e08ce]
+java.security.UnrecoverableKeyException: Get Key failed: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at sun.security.pkcs12.PKCS12KeyStore.engineGetKey(PKCS12KeyStore.java:435) ~[?:1.8.0_181]
+	at java.security.KeyStore.getKey(KeyStore.java:1023) ~[?:1.8.0_181]
+	at sun.security.ssl.SunX509KeyManagerImpl.<init>(SunX509KeyManagerImpl.java:133) ~[?:1.8.0_181]
+	at sun.security.ssl.KeyManagerFactoryImpl$SunX509.engineInit(KeyManagerFactoryImpl.java:70) ~[?:1.8.0_181]
+	at javax.net.ssl.KeyManagerFactory.init(KeyManagerFactory.java:256) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:255) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.loadJdkSslEngine(NettyConnector.java:624) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.access$500(NettyConnector.java:124) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector$1.initChannel(NettyConnector.java:532) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:991) ~[sunjce_provider.jar:1.8.0_171]
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:847) ~[sunjce_provider.jar:1.8.0_171]
+	at com.sun.crypto.provider.PKCS12PBECipherCore.implDoFinal(PKCS12PBECipherCore.java:399) ~[sunjce_provider.jar:1.8.0_171]
+	at com.sun.crypto.provider.PKCS12PBECipherCore$PBEWithSHA1AndDESede.engineDoFinal(PKCS12PBECipherCore.java:431) ~[sunjce_provider.jar:1.8.0_171]
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164) ~[?:1.8.0_171]
+	at sun.security.pkcs12.PKCS12KeyStore.engineGetKey(PKCS12KeyStore.java:371) ~[?:1.8.0_181]
+	... 25 more
+2019-03-10 08:55:33 [main] ERROR client:854 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.ensureOpen(...)(Unknown Source) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 08:56:20 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:56:20 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:56:20 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:56:21 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:56:21 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:56:21 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:56:21 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:56:21 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:56:21 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:56:21 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:56:21 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:56:21 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:56:21 [Thread-0 (ActiveMQ-client-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x3ae6bf60]
+java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.loadJdkSslEngine(NettyConnector.java:624) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.access$500(NettyConnector.java:124) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector$1.initChannel(NettyConnector.java:532) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	... 24 more
+2019-03-10 08:56:21 [main] ERROR client:854 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.ensureOpen(...)(Unknown Source) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 08:56:48 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:56:48 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:56:48 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:56:48 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:56:48 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:56:48 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:56:48 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:56:48 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:56:48 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:56:48 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:56:48 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:56:48 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:57:02 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:57:02 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:57:02 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:57:02 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:57:02 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:57:02 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:57:02 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:57:02 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:57:02 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:57:03 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:57:03 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:57:03 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:57:03 [Thread-0 (ActiveMQ-client-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0xf1805df0]
+java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.loadJdkSslEngine(NettyConnector.java:624) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.access$500(NettyConnector.java:124) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector$1.initChannel(NettyConnector.java:532) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	... 24 more
+2019-03-10 08:57:03 [main] ERROR client:854 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.ensureOpen(...)(Unknown Source) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 08:59:11 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 08:59:11 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 08:59:11 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 08:59:11 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 08:59:11 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 08:59:11 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 08:59:11 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 08:59:11 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:59:11 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 08:59:12 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 08:59:12 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 08:59:12 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 08:59:12 [Thread-0 (ActiveMQ-client-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x6b390cbb]
+java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.loadJdkSslEngine(NettyConnector.java:624) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.access$500(NettyConnector.java:124) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector$1.initChannel(NettyConnector.java:532) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	... 24 more
+2019-03-10 08:59:12 [main] ERROR client:854 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.ensureOpen(...)(Unknown Source) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 09:01:06 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:01:06 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:01:06 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:01:06 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:01:06 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:01:06 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:01:06 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:01:06 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:01:06 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:01:07 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:01:07 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:01:07 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:01:07 [Thread-0 (ActiveMQ-client-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x03deedf7]
+java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.loadJdkSslEngine(NettyConnector.java:624) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.access$500(NettyConnector.java:124) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector$1.initChannel(NettyConnector.java:532) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	... 24 more
+2019-03-10 09:01:07 [main] ERROR client:854 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.ensureOpen(...)(Unknown Source) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 09:02:52 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:02:52 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:02:52 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:02:52 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:02:52 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:02:52 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:02:52 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:02:52 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:02:52 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:02:52 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:02:52 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:02:52 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:02:53 [Thread-0 (ActiveMQ-client-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x489727bd]
+java.security.UnrecoverableKeyException: Get Key failed: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at sun.security.pkcs12.PKCS12KeyStore.engineGetKey(PKCS12KeyStore.java:435) ~[?:1.8.0_181]
+	at java.security.KeyStore.getKey(KeyStore.java:1023) ~[?:1.8.0_181]
+	at sun.security.ssl.SunX509KeyManagerImpl.<init>(SunX509KeyManagerImpl.java:133) ~[?:1.8.0_181]
+	at sun.security.ssl.KeyManagerFactoryImpl$SunX509.engineInit(KeyManagerFactoryImpl.java:70) ~[?:1.8.0_181]
+	at javax.net.ssl.KeyManagerFactory.init(KeyManagerFactory.java:256) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:255) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.loadJdkSslEngine(NettyConnector.java:624) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector.access$500(NettyConnector.java:124) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnector$1.initChannel(NettyConnector.java:532) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:991) ~[sunjce_provider.jar:1.8.0_171]
+	at com.sun.crypto.provider.CipherCore.doFinal(CipherCore.java:847) ~[sunjce_provider.jar:1.8.0_171]
+	at com.sun.crypto.provider.PKCS12PBECipherCore.implDoFinal(PKCS12PBECipherCore.java:399) ~[sunjce_provider.jar:1.8.0_171]
+	at com.sun.crypto.provider.PKCS12PBECipherCore$PBEWithSHA1AndDESede.engineDoFinal(PKCS12PBECipherCore.java:431) ~[sunjce_provider.jar:1.8.0_171]
+	at javax.crypto.Cipher.doFinal(Cipher.java:2164) ~[?:1.8.0_171]
+	at sun.security.pkcs12.PKCS12KeyStore.engineGetKey(PKCS12KeyStore.java:371) ~[?:1.8.0_181]
+	... 25 more
+2019-03-10 09:02:53 [main] ERROR client:854 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.ensureOpen(...)(Unknown Source) ~[netty-transport-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 09:09:41 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:09:41 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:09:41 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:09:41 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:09:41 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:09:41 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:09:41 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:09:42 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:09:42 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:09:42 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:09:42 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:09:42 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:32:23 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:32:23 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:32:23 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:32:23 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:32:23 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:32:23 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:32:23 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:32:23 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:32:23 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:32:23 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:32:23 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:32:23 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:32:24 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x78a6b9e0, L:/127.0.0.1:61616 - R:/127.0.0.1:58270]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 09:32:24 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 09:38:46 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:38:46 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:38:46 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:38:47 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:38:47 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:38:47 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:38:47 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:38:47 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:38:47 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:38:47 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:38:47 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:38:47 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:38:48 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x1e5220fc, L:/127.0.0.1:61616 - R:/127.0.0.1:58296]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 09:38:48 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 09:44:29 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:44:29 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:44:29 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:44:30 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:44:30 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:44:30 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:44:30 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:44:30 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:44:30 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:44:30 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:44:30 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:44:30 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:44:45 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:44:45 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:44:45 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:44:45 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:44:45 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:44:45 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:44:45 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:44:45 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:44:45 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:44:45 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:44:45 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:44:45 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:44:46 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0xd015dc51, L:/127.0.0.1:61616 - R:/127.0.0.1:58344]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 09:44:46 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 09:46:10 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:46:10 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:46:10 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:46:10 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:46:10 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:46:10 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:46:10 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:46:10 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:46:10 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:46:10 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:46:10 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:46:10 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:46:11 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x8837e203, L:/127.0.0.1:61616 - R:/127.0.0.1:58353]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 09:46:11 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 09:49:13 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:49:13 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:49:13 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:49:13 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:49:13 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:49:13 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:49:13 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:49:14 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:49:14 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:49:14 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:49:14 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:49:14 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:49:15 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x2b5c9354, L:/127.0.0.1:61616 - R:/127.0.0.1:58402]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 09:49:15 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 09:50:06 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:50:06 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:50:06 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:50:06 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:50:06 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:50:06 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:50:06 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:50:07 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:50:07 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:50:07 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:50:07 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:50:07 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:50:08 [Thread-1 (activemq-netty-threads)] WARN  ChannelInitializer:151 - Failed to initialize a channel. Closing: [id: 0x36f70a24, L:/127.0.0.1:61616 - R:/127.0.0.1:58415]
+java.lang.IllegalStateException: Unable to create NettyAcceptor for localhost:61616
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:560) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.getSslHandler(NettyAcceptor.java:484) ~[artemis-server-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor$4.initChannel(NettyAcceptor.java:392) ~[artemis-server-2.6.4.jar:2.6.4]
+	at io.netty.channel.ChannelInitializer.initChannel(ChannelInitializer.java:113) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.ChannelInitializer.handlerAdded(ChannelInitializer.java:105) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAdded0(DefaultChannelPipeline.java:637) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.access$000(DefaultChannelPipeline.java:46) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline$PendingHandlerAddedTask.execute(DefaultChannelPipeline.java:1487) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.callHandlerAddedForAllHandlers(DefaultChannelPipeline.java:1161) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.DefaultChannelPipeline.invokeHandlerAddedIfNeeded(DefaultChannelPipeline.java:686) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.register0(AbstractChannel.java:510) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.access$200(AbstractChannel.java:423) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe$1.run(AbstractChannel.java:482) [netty-transport-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:163) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:404) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at io.netty.channel.kqueue.KQueueEventLoop.run(KQueueEventLoop.java:273) [netty-transport-native-kqueue-4.1.24.Final-osx-x86_64.jar:4.1.24.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:884) [netty-common-4.1.24.Final.jar:4.1.24.Final]
+	at org.apache.activemq.artemis.utils.ActiveMQThreadFactory$1.run(ActiveMQThreadFactory.java:118) [artemis-commons-2.6.4.jar:2.6.4]
+Caused by: java.io.IOException: keystore password was incorrect
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+Caused by: java.security.UnrecoverableKeyException: failed to decrypt safe contents entry: javax.crypto.BadPaddingException: Given final block not properly padded. Such issues can arise if a bad key is used during decryption.
+	at sun.security.pkcs12.PKCS12KeyStore.engineLoad(PKCS12KeyStore.java:2059) ~[?:1.8.0_181]
+	at java.security.KeyStore.load(KeyStore.java:1445) ~[?:1.8.0_181]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeystore(SSLSupport.java:224) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagerFactory(SSLSupport.java:254) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.loadKeyManagers(SSLSupport.java:240) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:98) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.ssl.SSLSupport.createContext(SSLSupport.java:76) ~[artemis-core-client-2.6.4.jar:2.6.4]
+	at org.apache.activemq.artemis.core.remoting.impl.netty.NettyAcceptor.loadJdkSslEngine(NettyAcceptor.java:558) ~[artemis-server-2.6.4.jar:2.6.4]
+	... 17 more
+2019-03-10 09:50:08 [main] ERROR client:777 - AMQ214016: Failed to create netty connection
+java.nio.channels.ClosedChannelException: null
+	at io.netty.handler.ssl.SslHandler.channelInactive(...)(Unknown Source) ~[netty-handler-4.1.24.Final.jar:4.1.24.Final]
+2019-03-10 09:50:29 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:50:29 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:50:29 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:50:29 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:50:29 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:50:29 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:50:29 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:50:29 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:50:29 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:50:30 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:50:30 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:50:30 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:50:31 [Thread-1 (activemq-netty-threads)] INFO  server:527 - AMQ221053: Disallowing use of vulnerable protocol 'SSLv2Hello' on acceptor '7715a7ec-433b-11e9-8106-0ec45854408c'. See http://www.oracle.com/technetwork/topics/security/poodlecve-2014-3566-2339408.html for more details.
+2019-03-10 09:50:58 [main] INFO  server:537 - AMQ221000: live Message Broker is starting with configuration Broker Configuration (clustered=false,journalDirectory=data/journal,bindingsDirectory=data/bindings,largeMessagesDirectory=data/largemessages,pagingDirectory=data/paging)
+2019-03-10 09:50:58 [main] INFO  server:2283 - AMQ221045: libaio is not available, switching the configuration into NIO
+2019-03-10 09:50:58 [main] INFO  server:141 - AMQ221013: Using NIO Journal
+2019-03-10 09:50:58 [main] INFO  server:384 - AMQ221057: Global Max Size is being adjusted to 1/2 of the JVM max size (-Xmx). being defined as 954,466,304
+2019-03-10 09:50:58 [main] INFO  server:156 - AMQ221043: Protocol module found: [artemis-server]. Adding protocol support for: CORE
+2019-03-10 09:50:58 [main] INFO  server:166 - AMQ221034: Waiting indefinitely to obtain live lock
+2019-03-10 09:50:58 [main] INFO  server:170 - AMQ221035: Live Server Obtained live lock
+2019-03-10 09:50:58 [main] WARN  server:3462 - AMQ222165: No Dead Letter Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:50:58 [main] WARN  server:3465 - AMQ222166: No Expiry Address configured for queue exampleQueue in AddressSettings
+2019-03-10 09:50:59 [main] INFO  server:439 - AMQ221020: Started KQUEUE Acceptor at localhost:61616 for protocols [CORE]
+2019-03-10 09:50:59 [main] INFO  server:79 - AMQ221007: Server is now live
+2019-03-10 09:50:59 [main] INFO  server:568 - AMQ221001: Apache ActiveMQ Artemis Message Broker version 2.6.4 [localhost, nodeID=3afff34d-41b1-11e9-b256-787b8ab17645] 
+2019-03-10 09:50:59 [Thread-1 (activemq-netty-threads)] INFO  server:527 - AMQ221053: Disallowing use of vulnerable protocol 'SSLv2Hello' on acceptor '8840cc20-433b-11e9-84cd-0ec45854408c'. See http://www.oracle.com/technetwork/topics/security/poodlecve-2014-3566-2339408.html for more details.
+2019-03-10 09:50:59 [Thread-1 (activemq-netty-threads)] WARN  server:178 - AMQ222216: Security problem while creating session: AMQ229031: Unable to validate user from /127.0.0.1:58429. Username: null; SSL certificate subject DN: unavailable

@@ -25,32 +25,45 @@ public class CertificateManager {
     
     private int keySize = 2048;
 
-    public CertificateManager(String agentPath) {
+    private String agentpath;
+
+    public CertificateManager(String agentPath, String password) {
 
         try {
 
-            
+            this.agentpath = agentPath;
 
             keySize = 2048;
 
             this.keyStoreAlias = agentPath;
             
             //keyStoreAlias = UUID.randomUUID().toString();
-            keyStorePassword = UUID.randomUUID().toString().toCharArray();
+            //keyStorePassword = UUID.randomUUID().toString().toCharArray();
+
+            keyStorePassword = password.toCharArray();
 
             keyStore = KeyStore.getInstance("PKCS12");
-            keyStore.load(null, null);
+            //keyStore.load(null, null);
+
+            InputStream keyStream = new FileInputStream(agentpath + "-key.pkcs12");
+            keyStore.load(keyStream,keyStorePassword);
+
             
 
             trustStore = KeyStore.getInstance("PKCS12");
-            trustStore.load(null, null);
+            //trustStore.load(null, null);
 
-            generateCertChain();
+            InputStream trustStream = new FileInputStream(agentpath + "-trust.pkcs12");
+            trustStore.load(trustStream,keyStorePassword);
+
+
+            //generateCertChain();
 
             //trust self
-            addCertificatesToTrustStore(keyStoreAlias, getPublicCertificate());
+            //addCertificatesToTrustStore(keyStoreAlias, getPublicCertificate());
 
             saveKeyStore();
+            saveTrustStore();
 
 
         } catch(Exception ex) {
@@ -59,16 +72,27 @@ public class CertificateManager {
 
     }
 
-    public void saveKeyStore() {
+    public void saveTrustStore() {
 
         try {
-            FileOutputStream out = new FileOutputStream("client.jks");
-            keyStore.store(out, "cody01".toCharArray());
+            FileOutputStream out = new FileOutputStream(agentpath + "-trust.pkcs12");
+            trustStore.store(out, keyStorePassword);
             out.close();
         } catch (Exception ex) {
             ex.printStackTrace();
         }
 
+    }
+
+    public void saveKeyStore() {
+
+        try {
+            FileOutputStream out = new FileOutputStream(agentpath + "-key.pkcs12");
+            keyStore.store(out, keyStorePassword);
+            out.close();
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
     }
 
     public void updateSSL(X509Certificate[] cert, String alias) {

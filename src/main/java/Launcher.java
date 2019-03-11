@@ -14,30 +14,24 @@ public class Launcher {
 
             String agentpath = "test";
             String password = "cody";
+            String port = "32010";
 
             CertificateManager certificateManager = new CertificateManager(agentpath,password);
 
-            Broker broker = new Broker(agentpath, password);
+            Broker broker = new Broker(agentpath, password, port);
             broker.initServer();
 
-            Consumer consumer = new Consumer(agentpath, password);
-            for(String c : consumer.getEnabledCipherSuites()) {
-                System.out.println(c);
-            }
+            Broker broker2 = new Broker(agentpath, password, "32011");
+            broker2.initServer();
 
+/*
+            Consumer consumer = new Consumer(agentpath, password, "32011");
             consumer.initConsumer();
-            /*
-            KeyStore ks = consumer.loadKeystore("PKCS12", agentpath + "-key.pkcs12", password);
-            System.out.println(ks.getType() + " " + ks.getProvider().getName() + " " + ks.getKey("test",password.toCharArray()));
 
 
-            */
-
-
-
-            Producer producer = new Producer(agentpath, password);
+            Producer producer = new Producer(agentpath, password, port);
             producer.initProducer();
-
+*/
 
         } catch(Exception ex) {
             ex.printStackTrace();

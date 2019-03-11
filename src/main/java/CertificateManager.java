@@ -44,24 +44,24 @@ public class CertificateManager {
             keyStorePassword = password.toCharArray();
 
             keyStore = KeyStore.getInstance("PKCS12");
-            //keyStore.load(null, null);
+            keyStore.load(null, null);
 
-            InputStream keyStream = new FileInputStream(agentpath + "-key.pkcs12");
-            keyStore.load(keyStream,keyStorePassword);
+            //InputStream keyStream = new FileInputStream(agentpath + "-key.pkcs12");
+            //keyStore.load(keyStream,keyStorePassword);
 
             
 
             trustStore = KeyStore.getInstance("PKCS12");
-            //trustStore.load(null, null);
+            trustStore.load(null, null);
 
-            InputStream trustStream = new FileInputStream(agentpath + "-trust.pkcs12");
-            trustStore.load(trustStream,keyStorePassword);
+            //InputStream trustStream = new FileInputStream(agentpath + "-trust.pkcs12");
+            //trustStore.load(trustStream,keyStorePassword);
 
 
-            //generateCertChain();
+            generateCertChain();
 
             //trust self
-            //addCertificatesToTrustStore(keyStoreAlias, getPublicCertificate());
+            addCertificatesToTrustStore(keyStoreAlias, getPublicCertificate());
 
             saveKeyStore();
             saveTrustStore();

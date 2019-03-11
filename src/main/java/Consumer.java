@@ -26,11 +26,13 @@ public class Consumer {
 
     public String agentpath;
     public String password;
+    public String port;
 
-    public Consumer(String agentpath, String password) {
+    public Consumer(String agentpath, String password, String port) {
 
     this.agentpath = agentpath;
     this.password = password;
+    this.port = port;
 
     }
 
@@ -112,6 +114,7 @@ public class Consumer {
             transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PROVIDER_PROP_NAME, "PKCS12");
             transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PATH_PROP_NAME, agentpath + "-key.pkcs12");
             transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PASSWORD_PROP_NAME, password);
+            transportConfiguration.getParams().put(TransportConstants.PORT_PROP_NAME, port);
 
             for (Map.Entry<String, Object> entry : transportConfiguration.getParams().entrySet()) {
                 String key = entry.getKey();

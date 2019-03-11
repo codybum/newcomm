@@ -18,12 +18,14 @@ public class Producer {
 
     private String agentpath;
     private String password;
+    private String port;
 
 
-    public Producer(String agentpath, String password) {
+    public Producer(String agentpath, String password, String port) {
 
         this.agentpath = agentpath;
         this.password = password;
+        this.port = port;
 
     }
 
@@ -42,6 +44,7 @@ public class Producer {
             transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PROVIDER_PROP_NAME, "PKCS12");
             transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PATH_PROP_NAME, agentpath + "-key.pkcs12");
             transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PASSWORD_PROP_NAME, password);
+            transportConfiguration.getParams().put(TransportConstants.PORT_PROP_NAME, port);
 
 
             //TransportConfiguration transportConfiguration = new TransportConfiguration(InVMConnectorFactory.class.getName());
@@ -72,7 +75,9 @@ public class Producer {
 
                 producer.send(message);
 
+                Thread.sleep(5000);
 
+                /*
                 BytesMessage bigmessage = session.createBytesMessage();
 
                 FileInputStream fileInputStream = new FileInputStream("/Users/cody/Downloads/ubuntu-18.04.1.0-live-server-amd64.iso");
@@ -82,7 +87,7 @@ public class Producer {
                 bigmessage.setObjectProperty("JMS_AMQ_InputStream", bufferedInput);
 
                 producer.send(bigmessage);
-
+                */
             }
 
 

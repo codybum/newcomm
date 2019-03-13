@@ -1,8 +1,5 @@
 import org.apache.activemq.artemis.api.core.SimpleString;
 import org.apache.activemq.artemis.api.core.TransportConfiguration;
-import org.apache.activemq.artemis.api.core.client.ClientSession;
-import org.apache.activemq.artemis.api.core.client.ClientSessionFactory;
-import org.apache.activemq.artemis.api.core.client.ServerLocator;
 import org.apache.activemq.artemis.core.config.BridgeConfiguration;
 import org.apache.activemq.artemis.core.config.ClusterConnectionConfiguration;
 import org.apache.activemq.artemis.core.config.Configuration;
@@ -13,7 +10,6 @@ import org.apache.activemq.artemis.core.remoting.impl.netty.NettyConnectorFactor
 import org.apache.activemq.artemis.core.remoting.impl.netty.TransportConstants;
 import org.apache.activemq.artemis.core.server.cluster.ClusterController;
 import org.apache.activemq.artemis.core.server.cluster.ClusterManager;
-import org.apache.activemq.artemis.core.server.cluster.impl.ClusterConnectionImpl;
 import org.apache.activemq.artemis.core.server.embedded.EmbeddedActiveMQ;
 
 import java.util.ArrayList;
@@ -22,7 +18,7 @@ import java.util.List;
 import java.util.Map;
 
 
-public class Broker {
+public class BrokerBak {
 
     public String agentpath;
     public String password;
@@ -30,13 +26,13 @@ public class Broker {
     public String remote_address;
     public String remote_port;
 
-    public Broker(String agentpath, String password, String port, String remote_address, String remote_port) {
+    public BrokerBak(String agentpath, String password, String port, String remote_address, String remote_port) {
 
-        this.agentpath = agentpath;
-        this.password = password;
-        this.port = port;
-        this.remote_address = remote_address;
-        this.remote_port = remote_port;
+    this.agentpath = agentpath;
+    this.password = password;
+    this.port = port;
+    this.remote_address = remote_address;
+    this.remote_port = remote_port;
 
     }
 
@@ -66,6 +62,13 @@ public class Broker {
             transportConfiguration.getParams().put(TransportConstants.KEYSTORE_PASSWORD_PROP_NAME, password);
             transportConfiguration.getParams().put(TransportConstants.PORT_PROP_NAME, port);
 
+
+            for (Map.Entry<String, Object> entry : transportConfiguration.getParams().entrySet()) {
+                String key = entry.getKey();
+                Object value = entry.getValue();
+                System.out.println(key + ":" + value);
+            }
+
             transports.add(transportConfiguration);
             //transports.add(new TransportConfiguration(InVMAcceptorFactory.class.getName()));
 
@@ -74,8 +77,36 @@ public class Broker {
             config.setSecurityEnabled(false);
 
 
+/*
+            config.setClusterUser("test");
+            config.setClusterPassword("test");
+
+            ClusterConnectionConfiguration clusterConnectionConfiguration = new ClusterConnectionConfiguration();
+            clusterConnectionConfiguration.setName("word");
+            List<ClusterConnectionConfiguration> clusterConnectionConfigurations = new ArrayList<>();
+            clusterConnectionConfigurations.add(clusterConnectionConfiguration);
+            config.addClusterConfiguration(clusterConnectionConfiguration);
+*/
+
+/*
+            TransportConfiguration transportConfigurationLocal = null;
+            transportConfigurationLocal = new TransportConfiguration(NettyConnectorFactory.class.getName());
+            transportConfigurationLocal.getParams().put(TransportConstants.SSL_ENABLED_PROP_NAME, true);
+            transportConfigurationLocal.getParams().put(TransportConstants.TRUST_ALL_PROP_NAME, true);
+            transportConfigurationLocal.getParams().put(TransportConstants.VERIFY_HOST_PROP_NAME, false);
+            transportConfigurationLocal.getParams().put(TransportConstants.TRUSTSTORE_PROVIDER_PROP_NAME, "PKCS12");
+            transportConfigurationLocal.getParams().put(TransportConstants.TRUSTSTORE_PATH_PROP_NAME, agentpath + "-trust.pkcs12");
+            transportConfigurationLocal.getParams().put(TransportConstants.TRUSTSTORE_PASSWORD_PROP_NAME, password);
+            transportConfigurationLocal.getParams().put(TransportConstants.KEYSTORE_PROVIDER_PROP_NAME, "PKCS12");
+            transportConfigurationLocal.getParams().put(TransportConstants.KEYSTORE_PATH_PROP_NAME, agentpath + "-key.pkcs12");
+            transportConfigurationLocal.getParams().put(TransportConstants.KEYSTORE_PASSWORD_PROP_NAME, password);
+            //transportConfigurationLocal.getParams().put(TransportConstants.HOST_PROP_NAME, "localhost");
+            transportConfigurationLocal.getParams().put(TransportConstants.PORT_PROP_NAME, port);
+*/
+
             TransportConfiguration transportConfigurationLocal = new TransportConfiguration(InVMConnectorFactory.class.getName());
-            config.addConnectorConfiguration("local-connector", transportConfigurationLocal);
+
+            config.addConnectorConfiguration("local-connector",transportConfigurationLocal);
 
             ClusterConnectionConfiguration clusterConnectionConfiguration = null;
             clusterConnectionConfiguration = new ClusterConnectionConfiguration();
@@ -102,9 +133,16 @@ public class Broker {
             config.setClusterUser("test");
             config.setClusterPassword("test");
 
+            BridgeConfiguration bridgeConfiguration = null;
             TransportConfiguration transportConfigurationRemote = null;
 
-            if (remote_address != null) {
+
+
+            //if(port.equals("32011")) {
+            if(remote_address != null) {
+
+
+
 
 
                 transportConfigurationRemote = new TransportConfiguration(NettyConnectorFactory.class.getName());
@@ -120,9 +158,33 @@ public class Broker {
                 transportConfigurationRemote.getParams().put(TransportConstants.HOST_PROP_NAME, remote_address);
                 transportConfigurationRemote.getParams().put(TransportConstants.PORT_PROP_NAME, remote_port);
 
-                config.addConnectorConfiguration("remote-connector", transportConfigurationRemote);
+                config.addConnectorConfiguration("remote-connector",transportConfigurationRemote);
+
+
+
+                bridgeConfiguration = new BridgeConfiguration();
+                bridgeConfiguration.setName("MASTERBLASTER");
+                bridgeConfiguration.setQueueName("*");
+                //bridgeConfiguration.setForwardingAddress("exampleQueue");
+                bridgeConfiguration.setHA(false);
+                bridgeConfiguration.setConfirmationWindowSize(1);
+
+                /*
+                List<String> staticConnectors = new ArrayList<>();
+                staticConnectors.add("remote-connector");
+                bridgeConfiguration.setStaticConnectors(staticConnectors);
+                */
+
+                //start cluster
+
+
 
             }
+
+
+
+
+
 
             EmbeddedActiveMQ server = new EmbeddedActiveMQ();
             server.setConfiguration(config);
@@ -130,8 +192,13 @@ public class Broker {
             server.start();
 
 
-            if (remote_address != null) {
+            if(bridgeConfiguration != null) {
 
+
+                //server.getActiveMQServer().getClusterManager().clear();
+                //server.getActiveMQServer().getConfiguration().clearClusterConfigurations();
+                //List<String> staticConnectors = new ArrayList<>();
+                //staticConnectors.add("remote-connector");
 
                 ClusterConnectionConfiguration clusterConnectionConfiguration2 = new ClusterConnectionConfiguration();
                 clusterConnectionConfiguration2.setName("test");
@@ -153,44 +220,118 @@ public class Broker {
                 clusterConnectionConfiguration2.setClusterNotificationAttempts(2);
                 //clusterConnectionConfiguration2.setDiscoveryGroupName("my-discovery-group");
 
+
+                /*
+                <cluster-connections>
+   <cluster-connection name="my-cluster">
+      <address>jms</address>
+      <connector-ref>netty-connector</connector-ref>
+      <check-period>1000</check-period>
+      <connection-ttl>5000</connection-ttl>
+      <min-large-message-size>50000</min-large-message-size>
+      <call-timeout>5000</call-timeout>
+      <retry-interval>500</retry-interval>
+      <retry-interval-multiplier>1.0</retry-interval-multiplier>
+      <max-retry-interval>5000</max-retry-interval>
+      <initial-connect-attempts>-1</initial-connect-attempts>
+      <reconnect-attempts>-1</reconnect-attempts>
+      <use-duplicate-detection>true</use-duplicate-detection>
+      <forward-when-no-consumers>false</forward-when-no-consumers>
+      <max-hops>1</max-hops>
+      <confirmation-window-size>32000</confirmation-window-size>
+      <call-failover-timeout>30000</call-failover-timeout>
+      <notification-interval>1000</notification-interval>
+      <notification-attempts>2</notification-attempts>
+      <discovery-group-ref discovery-group-name="my-discovery-group"/>
+   </cluster-connection>
+</cluster-connections>
+                 */
+
+
+
+
+                //List<ClusterConnectionConfiguration> clusterConnectionConfigurations = new ArrayList<>();
+                //clusterConnectionConfigurations.add(clusterConnectionConfiguration);
+                //config.addClusterConfiguration(clusterConnectionConfiguration);
+
+                //server.getActiveMQServer().getClusterManager().getClusterController().stop();
+                //List<TransportConfiguration> transportConfigurations = new ArrayList<>();
+                //transportConfigurations.add(transportConfigurationRemote);
+
                 TransportConfiguration[] transportConfigurations = new TransportConfiguration[1];
                 transportConfigurations[0] = transportConfigurationRemote;
 
+                System.out.println("Describe: " + server.getActiveMQServer().getClusterManager().describe());
 
                 ClusterManager cm = server.getActiveMQServer().getClusterManager();
+                if(cm != null) {
+                    System.out.println("CM != null");
+
+                    //cm.start();
 
 
-                if (cm != null) {
+                    System.out.println("GET BY NAME: " + cm.getClusterConnection("test").getName());
+
+                    //cm.getClusterConnection("test").addClusterTopologyListener();
+
+                    //cm.getClusterController().connectToNodeInReplicatedCluster(transportConfigurationRemote);
+
+                    List<String> staticConnectors = new ArrayList<>();
+                    staticConnectors.add("remote-connector");
+
+
+                    for(ClusterConnectionConfiguration cc : server.getActiveMQServer().getConfiguration().getClusterConfigurations()) {
+                        cc.setStaticConnectors(staticConnectors);
+                        System.out.println("******** " + cc.getName() + " " + cc.getAddress());
+                        for(String connectorName : cc.getStaticConnectors()) {
+                            System.out.println("connector: " + connectorName);
+                        }
+                    }
+
+
+
+
+                    //ClusterControl clusterControl = cm.getClusterController().connectToNode(transportConfigurationRemote);
+                    //System.out.println("USER: " + clusterControl.getClusterUser());
+                    //System.out.println("PASS: " + clusterControl.getClusterPassword());
+                    //clusterControl.authorize();
+                    //Channel channel = clusterControl.createReplicationChannel();
+
+
+
+
+                    /*
+                    Set<ClusterConnection> clusterConnections = cm.getClusterConnections();
+                    for(ClusterConnection clusterConnection : clusterConnections) {
+                        System.out.println(clusterConnection.getName().toString());
+                        ClusterTopologyListener clusterTopologyListener
+
+                    }
+                    */
+
+//                    clusterConnectionConfiguration.setConnectorName("remote-connector");
+                    //ClusterConnection clusterConnection = cm.getClusterConnection("test");
+                    //clusterConnection.start();
 
                     ClusterController CC = cm.getClusterController();
+                    if(CC != null) {
+                        System.out.println("CC != null");
 
 
-                    if (CC != null) {
 
                         SimpleString ss = SimpleString.toSimpleString("word");
 
-                        //ClusterConnectionImpl clusterConnection;
-                        //clusterConnection = new ClusterConnectionImpl(cm, transportConfigurations, transportConfigurationRemote, new SimpleString(config.getName()), new SimpleString(config.getAddress()), config.getMinLargeMessageSize(), config.getClientFailureCheckPeriod(), config.getConnectionTTL(), config.getRetryInterval(), config.getRetryIntervalMultiplier(), config.getMaxRetryInterval(), config.getInitialConnectAttempts(), config.getReconnectAttempts(), config.getCallTimeout(), config.getCallFailoverTimeout(), config.isDuplicateDetection(), config.getMessageLoadBalancingType(), config.getConfirmationWindowSize(), config.getProducerWindowSize(), executorFactory, server, postOffice, managementService, scheduledExecutor, config.getMaxHops(), nodeManager, server.getConfiguration().getClusterUser(), server.getConfiguration().getClusterPassword(), config.isAllowDirectConnectionsOnly(), config.getClusterNotificationInterval(), config.getClusterNotificationAttempts());
-                        //clusterConnection = new ClusterConnectionImpl(cm, transportConfigurations, transportConfigurationRemote, new SimpleString(clusterConnectionConfiguration2.getName()), new SimpleString(clusterConnectionConfiguration2.getAddress()), clusterConnectionConfiguration2.getMinLargeMessageSize(), clusterConnectionConfiguration2.getClientFailureCheckPeriod(), clusterConnectionConfiguration2.getConnectionTTL(), clusterConnectionConfiguration2.getRetryInterval(), clusterConnectionConfiguration2.getRetryIntervalMultiplier(), clusterConnectionConfiguration2.getMaxRetryInterval(), clusterConnectionConfiguration2.getInitialConnectAttempts(), clusterConnectionConfiguration2.getReconnectAttempts(), clusterConnectionConfiguration2.getCallTimeout(), clusterConnectionConfiguration2.getCallFailoverTimeout(), clusterConnectionConfiguration2.isDuplicateDetection(), clusterConnectionConfiguration2.getMessageLoadBalancingType(), clusterConnectionConfiguration2.getConfirmationWindowSize(), clusterConnectionConfiguration2.getProducerWindowSize(), executorFactory, server, postOffice, managementService, scheduledExecutor, clusterConnectionConfiguration2.getMaxHops(), nodeManager, config.getClusterUser(), config.getClusterPassword(), clusterConnectionConfiguration2.isAllowDirectConnectionsOnly(), clusterConnectionConfiguration2.getClusterNotificationInterval(), clusterConnectionConfiguration2.getClusterNotificationAttempts());
+                        if(ss != null) {
+                            System.out.println("SS != null");
+                            if(transportConfigurations != null) {
+                                //System.out.println("Trans != null " + transportConfigurations.length);
 
 
-                        //CC.addClusterTopologyListenerForReplication();
-                        CC.addClusterConnection(ss,transportConfigurations,clusterConnectionConfiguration);
-                        ServerLocator serverLocator = CC.getServerLocator(ss);
+                                if(clusterConnectionConfiguration2 != null) {
+                                    //System.out.println("cluster != null");
 
-                        System.out.println("Is Closed: " + serverLocator.isClosed());
-                        serverLocator.initialize();
-                        ClientSessionFactory clientSessionFactory = serverLocator.createSessionFactory();
-                        ClientSession clientSession = clientSessionFactory.createSession();
-                        clientSession.createConsumer("exampleQueue");
-                        System.out.println("Is Closed: " + serverLocator.getGroupID());
-
-                        //CC.connectToNode(transportConfigurationRemote);
-
-                        System.out.println("Describe: " + server.getActiveMQServer().getClusterManager().describe());
-
-
-                        //CC.connectToNode(transportConfigurationRemote);
+                                    //CC.addClusterConnection(ss,transportConfigurations,clusterConnectionConfiguration);
+                                    //CC.connectToNode(transportConfigurationRemote);
 
                                     /*
                                     HashMap<String, Object> map = new HashMap<String, Object>();
@@ -224,16 +365,21 @@ public class Broker {
                                     */
 
 
-                    }
+                                }
+                            }
+                        }
 
+
+
+
+
+                    }
 
                 }
 
-            }
 
-
-            //server.getActiveMQServer().getClusterManager().getClusterController().connectToNode(transportConfigurationRemote);
-            //server.getActiveMQServer().getClusterManager().getClusterController().add
+                //server.getActiveMQServer().getClusterManager().getClusterController().connectToNode(transportConfigurationRemote);
+                //server.getActiveMQServer().getClusterManager().getClusterController().add
 
 
                 /*
@@ -250,6 +396,8 @@ public class Broker {
 
 
 
+
+            }
 
             /*
             public void addClusterConnection(SimpleString name,

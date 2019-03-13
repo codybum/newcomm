@@ -1,3 +1,5 @@
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
 import org.apache.activemq.artemis.api.core.TransportConfiguration;
 import org.apache.activemq.artemis.api.jms.ActiveMQJMSClient;
 import org.apache.activemq.artemis.api.jms.JMSFactoryType;
@@ -13,20 +15,31 @@ import javax.jms.*;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLEngine;
 import java.io.*;
+import java.lang.reflect.Type;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.security.AccessController;
 import java.security.KeyStore;
 import java.security.PrivilegedAction;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 public class Consumer {
 
-    Connection connection = null;
+    private Connection connection = null;
 
     public String agentpath;
     public String password;
     public String port;
+
+    private Gson gson;
+    private Type typeOfHashMap;
+
 
     public Consumer(String agentpath, String password, String port) {
 
@@ -34,6 +47,22 @@ public class Consumer {
     this.password = password;
     this.port = port;
 
+    gson = new Gson();
+
+        typeOfHashMap = new TypeToken<Map<String, String>>() { }.getType();
+
+
+    }
+
+    public  void mergeFiles(List<File> files, File into)
+            throws IOException {
+        try (FileOutputStream fos = new FileOutputStream(into);
+             BufferedOutputStream mergingStream = new BufferedOutputStream(fos)) {
+            for (File f : files) {
+                Files.copy(f.toPath(), mergingStream);
+                //f.delete();
+            }
+        }
     }
 
     private URL findResource(final String resourceName) {
@@ -141,6 +170,9 @@ public class Consumer {
 
             MessageConsumer consumer = session.createConsumer(queue);
 
+
+            Map<String,Map<String,String>> dataPartMap = new HashMap<>();
+
             consumer.setMessageListener(new MessageListener() {
                 public void onMessage(Message message) {
                     try {
@@ -151,11 +183,80 @@ public class Consumer {
                             text = text.replace("\r", "\n\t");
                             System.out.println("ActiveMQHL7Consumer(): [Received] \n\t" + text);
                             System.out.println("");
+
+                            String dataMapString = textMessage.getStringProperty("datamap");
+                            String dataName = textMessage.getStringProperty("dataname");
+
+                            if((dataMapString != null) && (dataName != null)) {
+                                Map<String, String> dataMap = gson.fromJson(dataMapString, typeOfHashMap);
+                                dataPartMap.put(dataName,dataMap);
+
+                                System.out.println("NEW DATA!!!");
+
+                            }
+
                         } else if( message instanceof  BytesMessage) {
 
-                            System.out.println("other message");
+                            System.out.println("data");
+
+                            String dataName = message.getStringProperty("dataname");
+                            String dataPart = message.getStringProperty("datapart");
+
+                            if((dataName != null) && (dataPart != null)) {
+
+                                System.out.println("in loop");
+
+                                Path journalPath = FileSystems.getDefault().getPath("journal-rec");
+                                Files.createDirectories(journalPath);
+
+                                File filePart = new File(journalPath.toAbsolutePath().toString(), dataPart);
+
+                                byte[] data = new byte[(int) ((BytesMessage) message).getBodyLength()];
+                                Files.write(filePart.toPath(), data);
+
+                                String remoteFileSize = dataPartMap.get(dataName).get(dataPart);
+                                dataPartMap.get(dataName).put(dataPart,remoteFileSize + "-1");
+
+                                boolean isComplete = true;
+                                for (Map.Entry<String, String> entry : dataPartMap.get(dataName).entrySet()) {
+                                    //String key = entry.getKey();
+                                    String value = entry.getValue();
+                                    if(!value.endsWith("-1")) {
+                                        isComplete = false;
+                                    }
+                                }
+
+                                if(isComplete) {
+
+                                    System.out.println("COMBINE FILES!!!!");
+                                    List<File> filePartList = new ArrayList<>();
+
+                                    File combinedFile = new File(journalPath.toAbsolutePath().toString(), dataName);
+
+                                    for (String key : dataPartMap.get(dataName).keySet()) {
+                                        File tmpFile = new File(journalPath.toAbsolutePath().toString(), key);
+                                        if(tmpFile.exists()) {
+                                            System.out.println(filePart.getName() + " exist");
+                                            filePartList.add(tmpFile);
+                                        } else {
+                                            System.out.println(filePart.getName());
+                                            System.exit(0);
+                                        }
+
+                                    }
+
+                                    mergeFiles(filePartList,combinedFile);
+
+                                    System.out.println("COMBINED FILE " + combinedFile.length());
 
 
+
+                                }
+
+                            }
+
+
+                            /*
                             File outputFile = new File("huge_message_received.dat");
 
                             FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
@@ -166,6 +267,7 @@ public class Consumer {
                             message.setObjectProperty("JMS_AMQ_SaveStream", bufferedOutput);
 
                             System.out.println("other message save");
+                            */
                         }
 
                     } catch(Exception ex) {

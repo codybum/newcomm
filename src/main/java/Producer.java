@@ -1,3 +1,4 @@
+import com.google.gson.Gson;
 import org.apache.activemq.artemis.api.core.TransportConfiguration;
 import org.apache.activemq.artemis.api.jms.ActiveMQJMSClient;
 import org.apache.activemq.artemis.api.jms.JMSFactoryType;
@@ -8,8 +9,15 @@ import org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory;
 import org.apache.activemq.artemis.jms.client.ActiveMQSession;
 
 import javax.jms.*;
-import java.io.BufferedInputStream;
-import java.io.FileInputStream;
+import java.io.*;
+import java.nio.file.FileSystems;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.rmi.server.ExportException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 public class Producer {
 
@@ -20,12 +28,15 @@ public class Producer {
     private String password;
     private String port;
 
+    private Gson gson;
+
 
     public Producer(String agentpath, String password, String port) {
 
         this.agentpath = agentpath;
         this.password = password;
         this.port = port;
+        gson = new Gson();
 
     }
 
@@ -68,14 +79,50 @@ public class Producer {
             MessageProducer producer = session.createProducer(queue);
 
 
-            while(true) {
-                TextMessage message = session.createTextMessage("This is a text message");
+            //while(true) {
 
-                System.out.println("Sent message: " + message.getText());
+
+                TextMessage message = session.createTextMessage("This is a text message from " + port);
+
+                String dataName = UUID.randomUUID().toString();
+
+                Map<String,String> dataMap = splitFile(dataName,"/Users/cody/Downloads/ubuntu-18.04.1.0-live-server-amd64.iso");
+
+                message.setStringProperty("dataname", dataName);
+                message.setStringProperty("datamap",gson.toJson(dataMap));
 
                 producer.send(message);
 
                 Thread.sleep(5000);
+
+                //sending parts
+
+                Path journalPath = FileSystems.getDefault().getPath("journal");
+
+                for (String key : dataMap.keySet()) {
+
+                    BytesMessage bytesMessage = session.createBytesMessage();
+                    bytesMessage.setStringProperty("datapart",key);
+                    bytesMessage.setStringProperty("dataname",dataName);
+
+                    File filePart = new File(journalPath.toAbsolutePath().toString(), key);
+                    byte[] fileContent = Files.readAllBytes(filePart.toPath());
+                    bytesMessage.writeBytes(fileContent);
+                    producer.send(bytesMessage);
+                    filePart.delete();
+                }
+
+
+                //Thread.sleep(5000);
+
+                /*
+                String dataName = message.getStringProperty("datapart");
+
+                            String dataMapString = textMessage.getStringProperty("datamap");
+                            String dataMapName = textMessage.getStringProperty("datamapname");
+
+                 */
+
 
                 /*
                 BytesMessage bigmessage = session.createBytesMessage();
@@ -88,7 +135,7 @@ public class Producer {
 
                 producer.send(bigmessage);
                 */
-            }
+            //}
 
 
         } catch (Exception ex) {
@@ -105,6 +152,72 @@ public class Producer {
         }
 
     }
+
+
+
+
+    public Map<String,String> splitFile(String dataName, String fileName)  {
+
+        Map<String,String> filePartNames = null;
+        try {
+
+            File f = new File(fileName);
+
+            //try-with-resources to ensure closing stream
+            FileInputStream fis = new FileInputStream(f);
+
+            filePartNames = streamToSplitFile(dataName, fis);
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return filePartNames;
+    }
+
+
+    public Map<String,String> streamToSplitFile(String dataName, InputStream is)  {
+
+        Map<String,String> filePartNames = null;
+        try {
+
+            Path journalPath = FileSystems.getDefault().getPath("journal");
+            Files.createDirectories(journalPath);
+
+            filePartNames = new HashMap<>();
+
+            int partCounter = 1;//I like to name parts from 001, 002, 003, ...
+            //you can change it to 0 if you want 000, 001, ...
+
+            int sizeOfFiles = 1024 * 1024 * 5;// 1MB
+            byte[] buffer = new byte[sizeOfFiles];
+
+
+            //String fileName = UUID.randomUUID().toString();
+
+            //try-with-resources to ensure closing stream
+            try (BufferedInputStream bis = new BufferedInputStream(is)) {
+
+                int bytesAmount = 0;
+                while ((bytesAmount = bis.read(buffer)) > 0) {
+                    //write each chunk of data into separate file with different number in name
+                    //String filePartName = String.format("%s.%03d", fileName, partCounter++);
+
+                    String filePartName = dataName + "." + partCounter;
+                    partCounter++;
+
+                    File newFile = new File(journalPath.toAbsolutePath().toString(), filePartName);
+                    try (FileOutputStream out = new FileOutputStream(newFile)) {
+                        out.write(buffer, 0, bytesAmount);
+                    }
+                    filePartNames.put(filePartName, String.valueOf(newFile.length()));
+                }
+            }
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return filePartNames;
+    }
+
 
 
 }

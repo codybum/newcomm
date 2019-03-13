@@ -211,6 +211,8 @@ public class Consumer {
 
                                 File filePart = new File(journalPath.toAbsolutePath().toString(), dataPart);
 
+
+
                                 byte[] data = new byte[(int) ((BytesMessage) message).getBodyLength()];
                                 Files.write(filePart.toPath(), data);
 

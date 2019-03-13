@@ -165,6 +165,8 @@ public class Broker {
                     ClusterController CC = cm.getClusterController();
 
 
+
+
                     if (CC != null) {
 
                         SimpleString ss = SimpleString.toSimpleString("word");

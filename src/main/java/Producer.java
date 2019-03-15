@@ -105,22 +105,26 @@ public class Producer {
 
                     //Thread.sleep(5000);
 
+                    Path filePath = Paths.get(fileUtils.getJournalPath().toAbsolutePath().toString() + "/" + fileObject.getDataName());
+
                     for (String parList : fileObject.getOrderedPartList()) {
 
                         BytesMessage bytesMessage = session.createBytesMessage();
                         bytesMessage.setStringProperty("datapart", parList);
                         bytesMessage.setStringProperty("dataname", fileObject.getDataName());
 
-                        File filePart = new File(fileUtils.getJournalPath().toAbsolutePath().toString(), parList);
+
+                        File filePart = new File(filePath.toAbsolutePath().toString(), parList);
 
                         System.out.println("READING FILE TO MESSAGE : " + filePart.getAbsolutePath() + " " + parList);
 
                         byte[] fileContent = Files.readAllBytes(filePart.toPath());
                         bytesMessage.writeBytes(fileContent);
                         producer.send(bytesMessage);
-                        //filePart.delete();
-
+                        filePart.delete();
                     }
+
+                    filePath.toFile().delete();
                 }
 
 

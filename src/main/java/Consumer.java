@@ -61,7 +61,7 @@ public class Consumer {
         typeOfHashMap = new TypeToken<Map<String, String>>() { }.getType();
         typeOfListFileObject = new TypeToken<List<FileObject>>() { }.getType();
 
-        String journalDirPath = FileSystems.getDefault().getPath("journal").toAbsolutePath().toString();
+        String journalDirPath = FileSystems.getDefault().getPath("journal-rec").toAbsolutePath().toString();
         fileUtils = new FileUtils(journalDirPath);
     }
 
@@ -226,10 +226,13 @@ public class Consumer {
 
                                     System.out.println("in loop");
 
-                                    Path journalPath = FileSystems.getDefault().getPath("journal-rec");
-                                    Files.createDirectories(journalPath);
+                                    //Path journalPath = FileSystems.getDefault().getPath("journal-rec");
+                                    Files.createDirectories(fileUtils.getJournalPath());
 
-                                    File filePart = new File(journalPath.toAbsolutePath().toString(), dataPart);
+                                    Path filePath = Paths.get(fileUtils.getJournalPath().toAbsolutePath().toString() + "/" + dataName);
+                                    Files.createDirectories(filePath);
+
+                                    File filePart = new File(filePath.toAbsolutePath().toString(), dataPart);
 
                                     byte[] data = new byte[(int) ((BytesMessage) message).getBodyLength()];
                                     ((BytesMessage) message).readBytes(data);
@@ -257,11 +260,12 @@ public class Consumer {
 
                                         List<File> orderedFilePartList = new ArrayList<>();
 
-                                        File combinedFile = new File(journalPath.toAbsolutePath().toString(), combinedFileName);
+
+                                        File combinedFile = new File(filePath.toAbsolutePath().toString(), combinedFileName);
 
                                         for(String filePartName : orderedFilePartNameList) {
 
-                                            File partFile = new File(journalPath.toAbsolutePath().toString(), filePartName);
+                                            File partFile = new File(filePath.toAbsolutePath().toString(), filePartName);
                                             if(partFile.exists()) {
                                                 System.out.println("File Part : " + partFile.getName());
                                                 orderedFilePartList.add(partFile);
@@ -271,7 +275,7 @@ public class Consumer {
                                         }
 
 
-                                        fileUtils.mergeFiles(orderedFilePartList, combinedFile, false);
+                                        fileUtils.mergeFiles(orderedFilePartList, combinedFile, true);
                                         if(combinedFile.exists()) {
 
                                             String localCombinedFilePath = combinedFile.getAbsolutePath();

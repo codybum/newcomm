@@ -107,7 +107,10 @@ public class FileUtils {
 
                         partCounter++;
 
-                        File newFile = new File(journalPath.toAbsolutePath().toString(), filePartName);
+                        Path filePath = Paths.get(journalPath.toAbsolutePath().toString() + "/" + dataName);
+                        Files.createDirectories(filePath);
+
+                        File newFile = new File(filePath.toAbsolutePath().toString(), filePartName);
                         try (FileOutputStream out = new FileOutputStream(newFile)) {
                             out.write(buffer, 0, bytesAmount);
                         }

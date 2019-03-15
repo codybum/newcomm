@@ -16,13 +16,16 @@ import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLEngine;
 import java.io.*;
 import java.lang.reflect.Type;
+import java.math.BigInteger;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.security.AccessController;
 import java.security.KeyStore;
+import java.security.MessageDigest;
 import java.security.PrivilegedAction;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -39,7 +42,11 @@ public class Consumer {
 
     private Gson gson;
     private Type typeOfHashMap;
+    private Type typeOfListFileObject;
 
+    private Map<String,FileObject> fileObjectMap;
+
+    private FileUtils fileUtils;
 
     public Consumer(String agentpath, String password, String port) {
 
@@ -47,23 +54,17 @@ public class Consumer {
     this.password = password;
     this.port = port;
 
+    fileObjectMap = new HashMap<>();
+
     gson = new Gson();
 
         typeOfHashMap = new TypeToken<Map<String, String>>() { }.getType();
+        typeOfListFileObject = new TypeToken<List<FileObject>>() { }.getType();
 
-
+        String journalDirPath = FileSystems.getDefault().getPath("journal").toAbsolutePath().toString();
+        fileUtils = new FileUtils(journalDirPath);
     }
 
-    public  void mergeFiles(List<File> files, File into)
-            throws IOException {
-        try (FileOutputStream fos = new FileOutputStream(into);
-             BufferedOutputStream mergingStream = new BufferedOutputStream(fos)) {
-            for (File f : files) {
-                Files.copy(f.toPath(), mergingStream);
-                //f.delete();
-            }
-        }
-    }
 
     private URL findResource(final String resourceName) {
         return (URL) AccessController.doPrivileged(new PrivilegedAction<URL>() {
@@ -127,6 +128,24 @@ public class Consumer {
     }
 
 
+    private boolean registerIncomingFiles(String fileobjectString) {
+        boolean isRegistered = false;
+        try {
+
+            List<FileObject> fileObjects = gson.fromJson(fileobjectString,typeOfListFileObject);
+
+            for(FileObject fileObject : fileObjects) {
+                System.out.println("Registered Data: " + fileObject.getDataName());
+                fileObjectMap.put(fileObject.getDataName(), fileObject);
+
+            }
+
+
+        } catch (Exception ex) {
+            ex.printStackTrace();
+        }
+        return isRegistered;
+    }
 
     public void initConsumer() {
         try {
@@ -171,7 +190,7 @@ public class Consumer {
             MessageConsumer consumer = session.createConsumer(queue);
 
 
-            Map<String,Map<String,String>> dataPartMap = new HashMap<>();
+
 
             consumer.setMessageListener(new MessageListener() {
                 public void onMessage(Message message) {
@@ -184,15 +203,14 @@ public class Consumer {
                             System.out.println("ActiveMQHL7Consumer(): [Received] \n\t" + text);
                             System.out.println("");
 
-                            String dataMapString = textMessage.getStringProperty("datamap");
-                            String dataName = textMessage.getStringProperty("dataname");
+                            String fileobjectString = textMessage.getStringProperty("fileobjects");
+                            //String dataName = textMessage.getStringProperty("dataname");
 
-                            if((dataMapString != null) && (dataName != null)) {
-                                Map<String, String> dataMap = gson.fromJson(dataMapString, typeOfHashMap);
-                                dataPartMap.put(dataName,dataMap);
-
-                                System.out.println("NEW DATA!!!");
-
+                            //if((dataMapString != null) && (dataName != null)) {
+                            if(fileobjectString != null) {
+                                if(registerIncomingFiles(fileobjectString)) {
+                                    System.out.println("NEW FILE PAYLOAD");
+                                }
                             }
 
                         } else if( message instanceof  BytesMessage) {
@@ -204,72 +222,75 @@ public class Consumer {
 
                             if((dataName != null) && (dataPart != null)) {
 
-                                System.out.println("in loop");
+                                if(fileObjectMap.containsKey(dataName)) {
 
-                                Path journalPath = FileSystems.getDefault().getPath("journal-rec");
-                                Files.createDirectories(journalPath);
+                                    System.out.println("in loop");
 
-                                File filePart = new File(journalPath.toAbsolutePath().toString(), dataPart);
+                                    Path journalPath = FileSystems.getDefault().getPath("journal-rec");
+                                    Files.createDirectories(journalPath);
+
+                                    File filePart = new File(journalPath.toAbsolutePath().toString(), dataPart);
+
+                                    byte[] data = new byte[(int) ((BytesMessage) message).getBodyLength()];
+                                    ((BytesMessage) message).readBytes(data);
+
+                                    Files.write(filePart.toPath(), data);
+
+                                    String filePartMD5Hash = fileUtils.getMD5(filePart.getAbsolutePath());
 
 
+                                    MessageDigest m= MessageDigest.getInstance("MD5");
+                                    m.update(data);
+                                    String md5Hash = new BigInteger(1,m.digest()).toString(16);
 
-                                byte[] data = new byte[(int) ((BytesMessage) message).getBodyLength()];
-                                Files.write(filePart.toPath(), data);
+                                    System.out.println("INCOMING HASH: " + filePartMD5Hash + " " + md5Hash);
 
-                                String remoteFileSize = dataPartMap.get(dataName).get(dataPart);
-                                dataPartMap.get(dataName).put(dataPart,remoteFileSize + "-1");
+                                    fileObjectMap.get(dataName).setDestFilePart(dataPart,filePartMD5Hash);
 
-                                boolean isComplete = true;
-                                for (Map.Entry<String, String> entry : dataPartMap.get(dataName).entrySet()) {
-                                    //String key = entry.getKey();
-                                    String value = entry.getValue();
-                                    if(!value.endsWith("-1")) {
-                                        isComplete = false;
-                                    }
-                                }
+                                    boolean isComplete = fileObjectMap.get(dataName).isFilePartComplete();
 
-                                if(isComplete) {
+                                    if (isComplete) {
 
-                                    System.out.println("COMBINE FILES!!!!");
-                                    List<File> filePartList = new ArrayList<>();
+                                        List<String> orderedFilePartNameList = fileObjectMap.get(dataName).getOrderedPartList();
+                                        String combinedFileName = fileObjectMap.get(dataName).getFileName();
+                                        String combinedFileHash = fileObjectMap.get(dataName).getFileMD5Hash();
 
-                                    File combinedFile = new File(journalPath.toAbsolutePath().toString(), dataName);
+                                        List<File> orderedFilePartList = new ArrayList<>();
 
-                                    for (String key : dataPartMap.get(dataName).keySet()) {
-                                        File tmpFile = new File(journalPath.toAbsolutePath().toString(), key);
-                                        if(tmpFile.exists()) {
-                                            System.out.println(filePart.getName() + " exist");
-                                            filePartList.add(tmpFile);
+                                        File combinedFile = new File(journalPath.toAbsolutePath().toString(), combinedFileName);
+
+                                        for(String filePartName : orderedFilePartNameList) {
+
+                                            File partFile = new File(journalPath.toAbsolutePath().toString(), filePartName);
+                                            if(partFile.exists()) {
+                                                System.out.println("File Part : " + partFile.getName());
+                                                orderedFilePartList.add(partFile);
+                                            } else {
+                                                System.out.println("File Part : " + partFile.getName() + " DOES NOT EXIST");
+                                            }
+                                        }
+
+
+                                        fileUtils.mergeFiles(orderedFilePartList, combinedFile, false);
+                                        if(combinedFile.exists()) {
+
+                                            String localCombinedFilePath = combinedFile.getAbsolutePath();
+                                            String localCombinedFileHash = fileUtils.getMD5(localCombinedFilePath);
+                                            System.out.println("File: " + localCombinedFileHash + " original_hash:" + combinedFileHash + " local_hash:" + localCombinedFileHash);
+
+                                            if(combinedFileHash.equals(localCombinedFileHash)) {
+                                                System.out.println("WE HAVE A FILE!!!");
+                                            }
+
                                         } else {
-                                            System.out.println(filePart.getName());
-                                            System.exit(0);
+                                            System.out.println("ERROR COMBINING FILE : " + combinedFileHash);
                                         }
 
                                     }
-
-                                    mergeFiles(filePartList,combinedFile);
-
-                                    System.out.println("COMBINED FILE " + combinedFile.length());
-
-
-
                                 }
 
                             }
 
-
-                            /*
-                            File outputFile = new File("huge_message_received.dat");
-
-                            FileOutputStream fileOutputStream = new FileOutputStream(outputFile);
-
-                            BufferedOutputStream bufferedOutput = new BufferedOutputStream(fileOutputStream);
-
-// This will block until the entire content is saved on disk
-                            message.setObjectProperty("JMS_AMQ_SaveStream", bufferedOutput);
-
-                            System.out.println("other message save");
-                            */
                         }
 
                     } catch(Exception ex) {

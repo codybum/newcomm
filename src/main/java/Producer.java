@@ -9,15 +9,17 @@ import org.apache.activemq.artemis.jms.client.ActiveMQConnectionFactory;
 import org.apache.activemq.artemis.jms.client.ActiveMQSession;
 
 import javax.jms.*;
+import javax.jms.Queue;
 import java.io.*;
+import java.math.BigInteger;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.rmi.server.ExportException;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.UUID;
+import java.security.DigestInputStream;
+import java.security.MessageDigest;
+import java.util.*;
 
 public class Producer {
 
@@ -30,6 +32,7 @@ public class Producer {
 
     private Gson gson;
 
+    private FileUtils fileUtils;
 
     public Producer(String agentpath, String password, String port) {
 
@@ -37,6 +40,9 @@ public class Producer {
         this.password = password;
         this.port = port;
         gson = new Gson();
+
+        String journalDirPath = FileSystems.getDefault().getPath("journal").toAbsolutePath().toString();
+        fileUtils = new FileUtils(journalDirPath);
 
     }
 
@@ -78,64 +84,45 @@ public class Producer {
 
             MessageProducer producer = session.createProducer(queue);
 
-
             //while(true) {
-
 
                 TextMessage message = session.createTextMessage("This is a text message from " + port);
 
-                String dataName = UUID.randomUUID().toString();
+                FileObject fileObjectIn = fileUtils.createFileObject("/Users/vcbumg2/Downloads/OpenStack_in_Action_v4_MEAP.pdf");
 
-                Map<String,String> dataMap = splitFile(dataName,"/Users/cody/Downloads/ubuntu-18.04.1.0-live-server-amd64.iso");
+                List<FileObject> fileObjects = new ArrayList<>();
+                fileObjects.add(fileObjectIn);
 
-                message.setStringProperty("dataname", dataName);
-                message.setStringProperty("datamap",gson.toJson(dataMap));
 
-                producer.send(message);
 
-                Thread.sleep(5000);
+                for(FileObject fileObject : fileObjects) {
 
-                //sending parts
+                    message.setStringProperty("fileobjects", gson.toJson(fileObjects));
 
-                Path journalPath = FileSystems.getDefault().getPath("journal");
+                    producer.send(message);
 
-                for (String key : dataMap.keySet()) {
+                    System.out.println("SEND TEXT MESSAGE");
 
-                    BytesMessage bytesMessage = session.createBytesMessage();
-                    bytesMessage.setStringProperty("datapart",key);
-                    bytesMessage.setStringProperty("dataname",dataName);
+                    //Thread.sleep(5000);
 
-                    File filePart = new File(journalPath.toAbsolutePath().toString(), key);
-                    byte[] fileContent = Files.readAllBytes(filePart.toPath());
-                    bytesMessage.writeBytes(fileContent);
-                    producer.send(bytesMessage);
-                    filePart.delete();
+                    for (String parList : fileObject.getOrderedPartList()) {
+
+                        BytesMessage bytesMessage = session.createBytesMessage();
+                        bytesMessage.setStringProperty("datapart", parList);
+                        bytesMessage.setStringProperty("dataname", fileObject.getDataName());
+
+                        File filePart = new File(fileUtils.getJournalPath().toAbsolutePath().toString(), parList);
+
+                        System.out.println("READING FILE TO MESSAGE : " + filePart.getAbsolutePath() + " " + parList);
+
+                        byte[] fileContent = Files.readAllBytes(filePart.toPath());
+                        bytesMessage.writeBytes(fileContent);
+                        producer.send(bytesMessage);
+                        //filePart.delete();
+
+                    }
                 }
 
-
-                //Thread.sleep(5000);
-
-                /*
-                String dataName = message.getStringProperty("datapart");
-
-                            String dataMapString = textMessage.getStringProperty("datamap");
-                            String dataMapName = textMessage.getStringProperty("datamapname");
-
-                 */
-
-
-                /*
-                BytesMessage bigmessage = session.createBytesMessage();
-
-                FileInputStream fileInputStream = new FileInputStream("/Users/cody/Downloads/ubuntu-18.04.1.0-live-server-amd64.iso");
-
-                BufferedInputStream bufferedInput = new BufferedInputStream(fileInputStream);
-
-                bigmessage.setObjectProperty("JMS_AMQ_InputStream", bufferedInput);
-
-                producer.send(bigmessage);
-                */
-            //}
 
 
         } catch (Exception ex) {
@@ -152,72 +139,6 @@ public class Producer {
         }
 
     }
-
-
-
-
-    public Map<String,String> splitFile(String dataName, String fileName)  {
-
-        Map<String,String> filePartNames = null;
-        try {
-
-            File f = new File(fileName);
-
-            //try-with-resources to ensure closing stream
-            FileInputStream fis = new FileInputStream(f);
-
-            filePartNames = streamToSplitFile(dataName, fis);
-
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-        return filePartNames;
-    }
-
-
-    public Map<String,String> streamToSplitFile(String dataName, InputStream is)  {
-
-        Map<String,String> filePartNames = null;
-        try {
-
-            Path journalPath = FileSystems.getDefault().getPath("journal");
-            Files.createDirectories(journalPath);
-
-            filePartNames = new HashMap<>();
-
-            int partCounter = 1;//I like to name parts from 001, 002, 003, ...
-            //you can change it to 0 if you want 000, 001, ...
-
-            int sizeOfFiles = 1024 * 1024 * 5;// 1MB
-            byte[] buffer = new byte[sizeOfFiles];
-
-
-            //String fileName = UUID.randomUUID().toString();
-
-            //try-with-resources to ensure closing stream
-            try (BufferedInputStream bis = new BufferedInputStream(is)) {
-
-                int bytesAmount = 0;
-                while ((bytesAmount = bis.read(buffer)) > 0) {
-                    //write each chunk of data into separate file with different number in name
-                    //String filePartName = String.format("%s.%03d", fileName, partCounter++);
-
-                    String filePartName = dataName + "." + partCounter;
-                    partCounter++;
-
-                    File newFile = new File(journalPath.toAbsolutePath().toString(), filePartName);
-                    try (FileOutputStream out = new FileOutputStream(newFile)) {
-                        out.write(buffer, 0, bytesAmount);
-                    }
-                    filePartNames.put(filePartName, String.valueOf(newFile.length()));
-                }
-            }
-        } catch (Exception ex) {
-            ex.printStackTrace();
-        }
-        return filePartNames;
-    }
-
 
 
 }
